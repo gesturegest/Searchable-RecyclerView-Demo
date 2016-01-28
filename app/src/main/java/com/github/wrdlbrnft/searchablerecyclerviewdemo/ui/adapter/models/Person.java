@@ -22,7 +22,7 @@ public class Person implements Comparable<Person> {
     public int compareTo(Person another) {
         String[] rank1 = this.getRank().split("\n");
         String[] rank2 = another.getRank().split("\n");
-        int diff = Integer.parseInt(rank1[0]) - Integer.parseInt(rank2[0]);
+        int diff = Double.valueOf(rank1[0]).compareTo(Double.valueOf(rank2[0]));
         return (diff == 0) ? this.getName().compareTo(another.getName()) : diff;
     }
 

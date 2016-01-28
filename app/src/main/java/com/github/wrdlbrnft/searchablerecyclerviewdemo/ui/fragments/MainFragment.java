@@ -48,11 +48,11 @@ public class MainFragment extends Fragment implements SearchView.OnQueryTextList
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         mPersons = new ArrayList<>();
-        mPersons.add(new Person("1\nrank", "James Kub"));
-        mPersons.add(new Person("2\nrank", "Peter Hanly"));
-        mPersons.add(new Person("3\nrank", "Josh Penny"));
-        mPersons.add(new Person("1\nrank", "Danny Jackson"));
-        mPersons.add(new Person("3\nrank", "Brad Black"));
+        mPersons.add(new Person("1.1\nrank", "James Kub"));
+        mPersons.add(new Person("2.0\nrank", "Peter Hanly"));
+        mPersons.add(new Person("3.1\nrank", "Josh Penny"));
+        mPersons.add(new Person("1.0\nrank", "Danny Jackson"));
+        mPersons.add(new Person("3.2\nrank", "Brad Black"));
 
         Collections.sort(mPersons);
 
