@@ -18,6 +18,7 @@ import com.github.wrdlbrnft.searchablerecyclerviewdemo.ui.adapter.ExampleAdapter
 import com.github.wrdlbrnft.searchablerecyclerviewdemo.ui.adapter.models.ExampleModel;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class MainFragment extends Fragment implements SearchView.OnQueryTextListener {
@@ -106,6 +107,8 @@ public class MainFragment extends Fragment implements SearchView.OnQueryTextList
         for (String movie : MOVIES) {
             mModels.add(new ExampleModel(movie));
         }
+
+        Collections.sort(mModels);
 
         mAdapter = new ExampleAdapter(getActivity(), mModels);
         mRecyclerView.setAdapter(mAdapter);
